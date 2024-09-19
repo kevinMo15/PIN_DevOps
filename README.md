@@ -52,6 +52,8 @@ En la pestaña JSON copiar lo siguiente:
 
 **User data:** PIN_DevOps/00_userdata/ec2_user_data.sh
 
+Abrir el Puerto 80 en “inbound rules” del security group
+
 Una vez creada la instancia se le debe asignar el rol "ec2-admin-role" creada anteriormente.
 
 ---

@@ -44,6 +44,8 @@ En la pestaña JSON copiar lo siguiente:
 
 **Crear una instancia ec2**
 
+**Region:** us-east-1
+
 **Name:** Test
 
 **AMI:** Ubuntu Server 24.04 LTS
@@ -67,3 +69,9 @@ eksctl-mundoes-cluster-G6-nodegroup
 ```
 
 Una vez instalado grafana, se deben importar los dashboards 3119 y 6417 
+
+Eliminamos el cluster con el siguiente comando:
+
+```sh
+eksctl delete cluster --name mundoes-cluster-G6 --region us-east-1
+```
